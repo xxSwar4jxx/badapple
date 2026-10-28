@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "badapple-terminal"
+version = "1.0.0"
+description = "Play Bad Apple!! as ASCII art in your Linux terminal"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{ name = "Swar4j" }]
+keywords = ["bad-apple", "ascii", "terminal", "animation"]
+classifiers = [
+  "Environment :: Console",
+  "Operating System :: POSIX :: Linux",
+  "Programming Language :: Python :: 3",
+  "Topic :: Multimedia :: Video",
+  "Topic :: Terminals",
+]
+
+[project.urls]
+Repository = "https://github.com/xxSwar4jxx/badapple"
+
+[project.scripts]
+badapple = "badapple_cli:main"
+
+[tool.setuptools]
+py-modules = ["badapple_cli"]
